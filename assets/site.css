@@ -33,9 +33,10 @@ img,svg{max-width:100%}
 /* header */
 .site-h{border-bottom:1px solid var(--line);background:var(--paper)}
 .site-h .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 28px;padding-block:14px}
-/* Placeholder wordmark until the logo is chosen: replace the .brand contents with <img src="/assets/img/logo.svg" alt="SUALEX">. */
+/* Logo: "contorno" (header) and "silueta" (sub-site blocks), chosen by Maunus 2026-11-02. */
 .brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--olive-700)}
-.brand b{font-family:var(--serif);font-weight:700;font-size:27px;letter-spacing:.05em}
+.brand{align-items:center}
+.brand .logo{height:46px;width:auto;display:block}
 .brand span{font-family:var(--label);font-size:15px;color:var(--muted)}
 .site-h nav{font-family:var(--label);font-size:17px;display:flex;flex-wrap:wrap;gap:4px 22px;align-items:center}
 .site-h nav a{text-decoration:none;color:var(--olive-900)}
@@ -65,16 +66,16 @@ img,svg{max-width:100%}
 @media (max-width:520px){.row{grid-template-columns:minmax(0,1fr)}.blk{min-height:0}}
 .blk{display:flex;flex-direction:column;gap:4px;padding:22px 20px 20px;color:#f5f1e6;min-height:15rem;min-width:0;text-decoration:none}
 .row li:nth-child(1) .blk{background:var(--moss)}
-.row li:nth-child(2) .blk{background:var(--olive-700)}
+.row li:nth-child(2) .blk{background:#2f381d}
 .row li:nth-child(3) .blk{background:var(--ochre);color:#22200f}
 .row li:nth-child(4) .blk{background:var(--umber)}
 .row li:nth-child(5) .blk{background:var(--clay)}
 .blk .sw{font-family:var(--label);font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.88}
-.blk .nm{font-size:30px;font-weight:700;line-height:1.1}
+.blk .slogo{display:block;width:calc(100% + 40px);max-width:none;height:auto;margin:-22px -20px 6px}
 .blk .lg{font-style:italic;font-size:19px;opacity:.95}
 .blk .ds{font-family:var(--label);font-size:16px;opacity:.95;margin-top:auto;padding-top:14px}
 .blk .st{font-family:var(--label);font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-a.blk:hover .nm,a.blk:focus-visible .nm{text-decoration:underline}
+a.blk:hover .st,a.blk:focus-visible .st{text-decoration:underline}
 
 .intro{background:var(--sand);border-block:1px solid var(--line)}
 .intro .wrap{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:24px 56px;padding-block:40px 48px}
@@ -112,3 +113,6 @@ a.blk:hover .nm,a.blk:focus-visible .nm{text-decoration:underline}
 .site-f .credit{font-size:13px}
 .site-f .flogo{height:68px;width:auto}
 .logos img{height:auto;width:min(100%,340px)}
+.row li{display:flex}
+.row .blk{flex:1}
+@media (max-width:520px){.blk .slogo{width:200px;margin:-16px 0 4px -16px}}
