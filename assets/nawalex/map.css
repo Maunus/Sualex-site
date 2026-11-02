@@ -1,0 +1,57 @@
+/* NawaLex dialect map. Layout: controls, map + side panels, then the form table. */
+.nmap{--sea:#d6d9cb;--hl:#f3dd8a;--card:#fffdf8}
+.nmap .intro-note{font-family:var(--label);font-size:16px;color:var(--muted);margin:0 0 16px;max-width:60rem}
+.nmap .intro-note b{color:var(--clay);font-weight:600}
+.nmap .ctl label{font-family:var(--label);font-size:16px;color:var(--muted)}
+.nmap .seg button,.nmap .zoom button,.nmap .nav button{font-family:var(--label);font-size:15px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:5px 11px;cursor:pointer}
+.nmap .seg button[aria-pressed="true"],.nmap .zoom button[aria-pressed="true"]{background:var(--olive-700);color:#fff;border-color:var(--olive-700)}
+.nmap .src{margin-top:24px;border-top:1px solid var(--line);font-family:var(--label);font-size:14px;color:var(--muted);padding-top:10px}
+.ctl{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:0 0 14px}
+.ctl select{font-family:var(--label);font-size:17px;padding:6px 8px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:100%;min-width:0}
+.ctl .grow{display:flex;gap:6px;align-items:center;flex:1 1 22rem;min-width:0}
+.ctl .grow select{flex:1;min-width:0}
+.seg,.zoom{display:flex}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,21rem);gap:20px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+.mapbox{border:1px solid var(--line);background:var(--sea);position:relative;overflow:hidden}
+.mapbox svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.mapbox .st{fill:none;stroke:#7d735a;stroke-width:.9;stroke-opacity:.45;stroke-dasharray:3 3}
+.mapbox .co{fill:none;stroke:#4f4632;stroke-width:1.4;stroke-opacity:.6}
+.pt{cursor:pointer}
+.pt .ring{fill:none;stroke:#fff;stroke-width:2}
+.pt.dim{opacity:.18}
+.pt.sel .ring{stroke:var(--ink);stroke-width:3}
+.vlab{font-family:var(--label);font-size:13px;font-weight:600;fill:var(--olive-900);paint-order:stroke;stroke:#f1ece0;stroke-width:4px;stroke-linejoin:round;pointer-events:none}
+.cap{font-family:var(--label);font-size:13px;color:var(--muted);margin:6px 0 0}
+.side{display:grid;gap:16px;min-width:0}
+.panel{background:var(--card);border:1px solid var(--line);padding:14px 16px;min-width:0}
+.panel h3{font-family:var(--label);font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--umber);margin:0 0 8px}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:2px;font-family:var(--label);font-size:16px}
+.legend button{all:unset;display:grid;grid-template-columns:16px auto 1fr auto;gap:8px;align-items:baseline;width:100%;padding:3px 4px;cursor:pointer;box-sizing:border-box}
+.legend button:hover,.legend button[aria-pressed="true"]{background:var(--sand)}
+.legend button:focus-visible{outline:3px solid var(--hl)}
+.sw{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #0003;align-self:center}
+.legend .code{font-weight:600}
+.legend .root{color:var(--muted);font-family:var(--serif);font-size:15px;overflow-wrap:anywhere}
+.legend .n{color:var(--muted);font-variant-numeric:tabular-nums}
+.recon{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.recon li{display:grid;grid-template-columns:3.4rem 1fr;gap:6px;align-items:baseline}
+.recon .pl{font-family:var(--label);font-size:14px;color:var(--umber);font-weight:600}
+.recon .f{font-style:italic}
+.recon .g{font-family:var(--label);font-size:14px;color:var(--muted)}
+.empty{font-family:var(--label);font-size:15px;color:var(--muted);margin:0}
+.det dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:16px}
+.det dt{font-family:var(--label);color:var(--muted);font-size:15px}
+.det dd{margin:0;overflow-wrap:anywhere}
+.det .big{font-size:22px;font-weight:600;margin:0 0 4px}
+.tscroll{overflow-x:auto;margin-top:22px;border-top:1px solid var(--line)}
+.nmap table{border-collapse:collapse;width:100%;font-size:16px}
+.nmap th{font-family:var(--label);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;border-bottom:2px solid var(--line);padding:8px 10px;white-space:nowrap}
+.nmap td{border-bottom:1px solid var(--line);padding:5px 10px;vertical-align:top}
+.nmap td.f{font-style:italic}
+.nmap td.s{font-family:var(--label);color:var(--muted);white-space:nowrap}
+.nmap td.c{font-family:var(--label);font-weight:600;white-space:nowrap}
+.nmap tr.on td{background:#f7efd2}
+.nmap tbody tr{cursor:pointer}
+
+
