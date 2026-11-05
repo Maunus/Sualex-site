@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- remove at launch -->
+<title>WixaLex · SUALEX</title>
+<meta name="description" content="Diccionarios, datos y textos de acceso abierto para el wixárika, el naayeri y las lenguas nahuas, del proyecto ERC SUAHIST.">
+<link rel="alternate" hreflang="es" href="https://sualex.org/wixalex/">
+<link rel="alternate" hreflang="en" href="https://sualex.org/en/wixalex/">
+<link rel="alternate" hreflang="x-default" href="https://sualex.org/wixalex/">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/andada-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/subsites.css">
+<meta property="og:title" content="Proyecto · SUALEX">
+<meta property="og:description" content="Diccionarios, datos y textos de acceso abierto para el wixárika, el naayeri y las lenguas nahuas, del proyecto ERC SUAHIST.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="site-h"><div class="wrap">
+  <a class="brand" href="../"><img class="logo" src="../assets/img/logos/logo-sualex-horizontal.svg" width="736" height="166" alt="SUALEX"><span>Recursos de lenguas yutoaztecas del sur</span></a>
+  <nav aria-label="Recursos">
+    <a href="../#recursos">Recursos</a>
+    <a href="../proyecto/">Proyecto</a>
+    <a href="../financiamiento/">Financiamiento</a>
+    <a class="lang" href="../en/wixalex/" hreflang="en" lang="en" title="Switch to English">English</a>
+  </nav>
+</div></header>
+<main id="main" class="sx wixalex" data-root="../">
+  <section class="sub"><div class="wrap">
+    <img class="slogo" src="../assets/img/logos/silueta-wixalex.svg" width="288" height="270" alt="">
+    <div><h1>WixaLex</h1><span class="lg">Diccionarios de la lengua wixárika</span></div>
+  </div></section>
+  <section class="demo"><div class="wrap"><b>Página de ejemplo.</b> Muestra cómo funcionará el diccionario: buscar, hojear como un libro, entradas con traducciones, etimología y ejemplos de textos. Las entradas son inventadas y solo sirven para mostrar el diseño; todavía no hay datos de WixaLex en el sitio.</div></section>
+  <div class="wrap view" id="wx" data-root="../">
+    <div class="sbar" id="wx-sbar">
+      <input type="search" id="wx-q" placeholder="Buscar en wixárika o en español" aria-label="Buscar">
+      <span class="seg" role="group" aria-label="Dirección de búsqueda"><button type="button" id="wx-d1" aria-pressed="true">wixárika → español</button><button type="button" id="wx-d2" aria-pressed="false">español → wixárika</button></span>
+      <select id="wx-src" aria-label="Diccionario"><option>Todos los diccionarios</option><option>‹Diccionario A›</option><option>‹Diccionario B›</option></select>
+    </div>
+    <div class="seg" role="group" aria-label="Vista" style="margin-bottom:12px"><button type="button" id="wx-t1" aria-pressed="true">Buscar</button><button type="button" id="wx-t2" aria-pressed="false">Hojear como libro</button></div>
+    <div class="abc" id="wx-abc" role="group" aria-label="Explorar por letra"></div>
+    <p class="datanote">Orden alfabético por confirmar.</p>
+    <div class="panes" id="wx-search">
+      <div><p class="count" id="wx-count"></p><ul class="results" id="wx-res"></ul></div>
+      <article class="entry" id="wx-entry"></article>
+    </div>
+    <div id="wx-book" hidden></div>
+  </div>
+</main>
+<footer class="site-f"><div class="wrap">
+  <span>Financiado por la Unión Europea (ERC, SUAHIST, 101116662). <a href="../financiamiento/">Financiamiento y agradecimientos</a></span>
+  <span>Universidad de Copenhague</span>
+  
+</div></footer>
+<script src="../assets/wixalex/wixalex.js"></script>
+</body>
+</html>

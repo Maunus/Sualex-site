@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- remove at launch -->
+<title>SUAText · SUALEX</title>
+<meta name="description" content="Open-access dictionaries, data and texts for Wixárika, Naayeri and the Nahua languages, from the ERC project SUAHIST.">
+<link rel="alternate" hreflang="es" href="https://sualex.org/suatext/">
+<link rel="alternate" hreflang="en" href="https://sualex.org/en/suatext/">
+<link rel="alternate" hreflang="x-default" href="https://sualex.org/suatext/">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/andada-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/subsites.css">
+<meta property="og:title" content="Project · SUALEX">
+<meta property="og:description" content="Open-access dictionaries, data and texts for Wixárika, Naayeri and the Nahua languages, from the ERC project SUAHIST.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-h"><div class="wrap">
+  <a class="brand" href="../"><img class="logo" src="../../assets/img/logos/logo-sualex-horizontal.svg" width="736" height="166" alt="SUALEX"><span>Southern Uto-Aztecan language resources</span></a>
+  <nav aria-label="Resources">
+    <a href="../#recursos">Resources</a>
+    <a href="../project/">Project</a>
+    <a href="../funding/">Funding</a>
+    <a class="lang" href="../../suatext/" hreflang="es" lang="es" title="Cambiar a español">Español</a>
+  </nav>
+</div></header>
+<main id="main" class="sx suatext" data-root="../../">
+  <section class="sub"><div class="wrap">
+    <img class="slogo" src="../../assets/img/logos/silueta-suatext.svg" width="288" height="270" alt="">
+    <div><h1>SUAText</h1><span class="lg">Glossed texts in Uto-Aztecan languages</span></div>
+  </div></section>
+  <section class="demo"><div class="wrap"><b>Example page with real data.</b> Three texts in Mexicanero (Nahuatl of Durango) from San Pedro Jícora, collected by K. Th. Preuss and published by Elsa Ziehm (1968), with the project’s analysis, glosses and translations. The analysis and the details of each text (narrator, tale type) are still in preparation.</div></section>
+  <div class="wrap view" id="tx" data-src="../../assets/suatext/data.json" data-root="../../">
+    <p class="datanote" id="tx-err" hidden><b>The texts could not be loaded.</b></p>
+    <div class="texts">
+      <div>
+        <div class="sbar"><input type="search" id="tx-q" placeholder="Search word, gloss or title" aria-label="Search the texts"></div>
+        <form class="tfilt" id="tx-filt" aria-label="Filter texts">
+          <label for="tx-f-lang">Language</label><select id="tx-f-lang"></select>
+          <label for="tx-f-place">Place</label><select id="tx-f-place"></select>
+          <label for="tx-f-type">Type / motif</label><select id="tx-f-type"></select>
+          <label for="tx-f-narr">Narrator</label><select id="tx-f-narr"></select>
+          <label for="tx-f-coll">Collector</label><select id="tx-f-coll"></select>
+          <label for="tx-f-y0">Period</label>
+          <span class="yr"><input id="tx-f-y0" type="number" value="1900" min="1500" max="2030" aria-label="From year"> – <input id="tx-f-y1" type="number" value="2026" min="1500" max="2030" aria-label="To year"></span>
+        </form>
+        <p class="count" id="tx-count" style="margin-top:14px"></p>
+        <ul class="tlist" id="tx-list"></ul>
+      </div>
+      <article class="reader" id="tx-reader">
+        <div id="tx-head"></div>
+        <div class="tiers" style="align-items:center;gap:10px">
+          <span class="seg" role="group" aria-label="Layout"><button type="button" id="tx-m1" aria-pressed="true">Interlinear</button><button type="button" id="tx-m2" aria-pressed="false">Original and translation</button></span>
+          <label class="lab" for="tx-tl" style="font-size:15px;color:var(--muted)">Translation:</label>
+          <select id="tx-tl" style="padding:5px 8px;border:1px solid var(--line);background:var(--paper);font-family:var(--label);font-size:15px">
+            <option value="5">Español</option><option value="6" selected>English</option><option value="7">Deutsch (Preuss/Ziehm)</option>
+          </select>
+        </div>
+        <div class="tiers" id="tx-tiers" role="group" aria-label="Visible lines">
+          <button type="button" class="chip" data-tier="o" aria-pressed="true">Original</button>
+          <button type="button" class="chip" data-tier="m" aria-pressed="true">Analysis</button>
+          <button type="button" class="chip" data-tier="g" aria-pressed="true">Gloss</button>
+          <button type="button" class="chip" data-tier="t" aria-pressed="true">Translation</button>
+          <button type="button" class="chip" data-tier="n" aria-pressed="true">Notes</button>
+        </div>
+        <p class="datanote">Click a word to see its gloss and how often it appears in the corpus.</p>
+        <div id="tx-units"></div><div id="tx-par" hidden></div>
+        <details style="margin-top:16px"><summary class="lab" style="cursor:pointer;color:var(--clay)">Gloss abbreviations</summary><p class="lab" id="tx-abbr" style="font-size:15px;margin:6px 0 0"></p></details>
+      </article>
+    </div>
+    <p class="src">Source: Preuss, Konrad Theodor. 1968. <i>Nahua-Texte aus San Pedro Jícora in Durango</i>. Ed. Elsa Ziehm. Berlin: Ibero-Amerikanisches Institut. Published by the IAI under CC BY-NC-ND 3.0. Analysis, glosses and Spanish and English translations: SUAHIST project (ERC 101116662).</p>
+  </div>
+</main>
+<footer class="site-f"><div class="wrap">
+  <span>Funded by the European Union (ERC, SUAHIST, 101116662). <a href="../funding/">Funding and acknowledgements</a></span>
+  <span>University of Copenhagen</span>
+  
+</div></footer>
+<script src="../../assets/suatext/suatext.js"></script>
+</body>
+</html>

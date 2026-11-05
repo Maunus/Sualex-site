@@ -21,3 +21,10 @@ The data file `assets/nawalex/data.json` is built from the Lastra CLDF in the SU
     python3 tools/build_nawalex_data.py PATH/TO/cldf/nawalex-lastra assets/nawalex/data.json "1-9,11-33,35,192,193"
 
 The last argument lists the Lastra concept numbers to show. Currently: the concepts with cognate coding by the project.
+
+## Example pages (WixaLex, SUAText, SUAEtym)
+
+Pages: `wixalex/`, `suatext/`, `suaetym/` and their English versions under `en/`. Shared styles: `assets/subsites.css`.
+- WixaLex: invented placeholder entries in `assets/wixalex/wixalex.js` (layout demo only).
+- SUAText and SUAEtym: data built from SUALEX-Data with
+  `python3 tools/build_demo_data.py PATH/TO/SUALEX-Data/cldf assets` (needs `cldf/suatext` and `cldf/nawalex-lastra`).

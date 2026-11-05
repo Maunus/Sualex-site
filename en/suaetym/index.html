@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- remove at launch -->
+<title>SUAEtym · SUALEX</title>
+<meta name="description" content="Open-access dictionaries, data and texts for Wixárika, Naayeri and the Nahua languages, from the ERC project SUAHIST.">
+<link rel="alternate" hreflang="es" href="https://sualex.org/suaetym/">
+<link rel="alternate" hreflang="en" href="https://sualex.org/en/suaetym/">
+<link rel="alternate" hreflang="x-default" href="https://sualex.org/suaetym/">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/andada-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/subsites.css">
+<meta property="og:title" content="Project · SUALEX">
+<meta property="og:description" content="Open-access dictionaries, data and texts for Wixárika, Naayeri and the Nahua languages, from the ERC project SUAHIST.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-h"><div class="wrap">
+  <a class="brand" href="../"><img class="logo" src="../../assets/img/logos/logo-sualex-horizontal.svg" width="736" height="166" alt="SUALEX"><span>Southern Uto-Aztecan language resources</span></a>
+  <nav aria-label="Resources">
+    <a href="../#recursos">Resources</a>
+    <a href="../project/">Project</a>
+    <a href="../funding/">Funding</a>
+    <a class="lang" href="../../suaetym/" hreflang="es" lang="es" title="Cambiar a español">Español</a>
+  </nav>
+</div></header>
+<main id="main" class="sx suaetym" data-root="../../">
+  <section class="sub"><div class="wrap">
+    <img class="slogo" src="../../assets/img/logos/silueta-suaetym.svg" width="288" height="270" alt="">
+    <div><h1>SUAEtym</h1><span class="lg">Southern Uto-Aztecan etymological dictionary</span></div>
+  </div></section>
+  <section class="demo"><div class="wrap"><b>Example page.</b> The etyma and their reflexes come from the working reconstructions in the Nahuatl dialect database (Lastra 1986 and later additions). They are drafts and for now cover only the Nahua varieties; cognates in the other languages will be added.</div></section>
+  <div class="wrap view" id="su" data-src="../../assets/suaetym/data.json" data-root="../../">
+    <p class="datanote" id="su-err" hidden><b>The data could not be loaded.</b></p>
+    <div class="etym">
+      <div>
+        <div class="sbar"><input type="search" id="su-q" placeholder="Search proto-form or meaning" aria-label="Search"></div>
+        <div class="sbar"><select id="su-lvl" aria-label="Reconstruction level" style="width:100%"></select></div>
+        <p class="count" id="su-count"></p>
+        <ul class="results" id="su-res" style="max-height:34rem;overflow-y:auto"></ul>
+        <h3 class="lab" style="font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--umber);margin:22px 0 8px">Languages</h3>
+        <ul class="tree">
+          <li>Southern Uto-Aztecan<ul>
+            <li class="has">Corachol<ul><li>Wixárika</li><li>Naayeri</li></ul></li>
+            <li class="has">Nahuan (Aztecan)<ul><li>Pochuteco</li><li>Nahua varieties</li></ul></li>
+            <li>‹Other branches to be defined›</li>
+          </ul></li>
+        </ul>
+        <p class="datanote" style="margin-top:12px">PSUA = Proto-Southern-Uto-Aztecan; PCN = Proto-Corachol-Nahua; PPN = Pre-Proto-Nahua; PN = Proto-Nahua.</p>
+      </div>
+      <article class="entry" id="su-entry"></article>
+    </div>
+    <p class="src">Source of the reflexes: Lastra de Suárez, Yolanda. 1986. <i>Las áreas dialectales del náhuatl moderno</i>. Mexico: UNAM, plus points added by the project. Reconstructions: SUAHIST project (ERC 101116662), working drafts.</p>
+  </div>
+</main>
+<footer class="site-f"><div class="wrap">
+  <span>Funded by the European Union (ERC, SUAHIST, 101116662). <a href="../funding/">Funding and acknowledgements</a></span>
+  <span>University of Copenhagen</span>
+  
+</div></footer>
+<script src="../../assets/suaetym/suaetym.js"></script>
+</body>
+</html>

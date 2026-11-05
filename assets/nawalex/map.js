@@ -113,6 +113,7 @@ $('#prev').addEventListener('click',function(){step(-1)});$('#next').addEventLis
 $('#v-cog').addEventListener('click',function(){st.view='cog';st.hl=null;render()});$('#v-reg').addEventListener('click',function(){st.view='reg';st.hl=null;render()});
 $('#z-all').addEventListener('click',function(){st.zoom='all';render()});$('#z-cen').addEventListener('click',function(){st.zoom='cen';render()});
 if(!(st.ci>=0&&st.ci<D.C.length))st.ci=0;
+var hm=location.hash.match(/^#c(\d+)$/);if(hm){var hi=D.C.findIndex(function(c){return c.id===hm[1]});if(hi>=0)st.ci=hi}
 texts();fillSelect();render();
 
 }
